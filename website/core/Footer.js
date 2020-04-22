@@ -48,10 +48,10 @@ class Footer extends React.Component {
           <div>
             <h5>Community</h5>
             <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
+              Who's using Mouselog?
             </a>
             <a
-              href="http://stackoverflow.com/questions/tagged/"
+              href="https://stackoverflow.com/search?q=mouselog"
               target="_blank"
               rel="noreferrer noopener">
               Stack Overflow
@@ -67,12 +67,12 @@ class Footer extends React.Component {
           <div>
             <h5>More</h5>
             <a href={this.props.config.baseUrl + 'blog'}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
+            <a href="https://github.com/microsoft/mouselog">GitHub</a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
               data-icon="octicon-star"
-              data-count-href="/facebook/docusaurus/stargazers"
+              data-count-href="/microsoft/mouselog/stargazers"
               data-show-count={true}
               data-count-aria-label="# stargazers on GitHub"
               aria-label="Star this project on GitHub">

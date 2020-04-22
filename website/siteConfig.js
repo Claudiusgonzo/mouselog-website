@@ -101,6 +101,9 @@ const siteConfig = {
 
   // Tracking ID of Google Analytics
   gaTrackingId: 'UA-119750650-5',
+
+  // URL for editing docs, usage example: editUrl + 'en/doc1.md'.
+  editUrl: 'https://github.com/microsoft/mouselog-website/edit/master/docs/',
 };
 
 module.exports = siteConfig;

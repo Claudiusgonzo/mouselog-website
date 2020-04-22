@@ -95,7 +95,9 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-    repoUrl: 'https://github.com/microsoft/mouselog',
+  repoUrl: 'https://github.com/microsoft/mouselog',
+  jsRepoUrl: 'https://github.com/microsoft/mouselog.js',
+  docsRepoUrl: 'https://github.com/microsoft/mouselog-website',
 
   // Tracking ID of Google Analytics
   gaTrackingId: 'UA-119750650-5',

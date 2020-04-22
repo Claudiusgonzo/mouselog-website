@@ -35,14 +35,11 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <a href={this.props.config.baseUrl + 'docs/go-quick-start.html'}>
+              Getting Started
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
-            </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.props.config.baseUrl + 'docs/api.html'}>
+              API Reference
             </a>
           </div>
           <div>
@@ -65,34 +62,41 @@ class Footer extends React.Component {
             </a>
           </div>
           <div>
-            <h5>More</h5>
-            <a href={this.props.config.baseUrl + 'blog'}>Blog</a>
-            <a href="https://github.com/microsoft/mouselog">GitHub</a>
+            <h5>GitHub</h5>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
               data-icon="octicon-star"
-              data-count-href="/microsoft/mouselog/stargazers"
+              data-count-href='/stargazers'
               data-show-count={true}
               data-count-aria-label="# stargazers on GitHub"
               aria-label="Star this project on GitHub">
-              Star
+              Mouselog
+            </a>
+            <br/>
+            <a
+              className="github-button"
+              href={this.props.config.jsRepoUrl}
+              data-icon="octicon-star"
+              data-count-href='/stargazers'
+              data-show-count={true}
+              data-count-aria-label="# stargazers on GitHub"
+              aria-label="Star this project on GitHub">
+              Mouselog.js
+            </a>
+            <br/>
+            <a
+              className="github-button"
+              href={this.props.config.docsRepoUrl}
+              data-icon="octicon-star"
+              data-count-href='/stargazers'
+              data-show-count={true}
+              data-count-aria-label="# stargazers on GitHub"
+              aria-label="Star this project on GitHub">
+              Docs
             </a>
           </div>
         </section>
-
-        <a
-          href="https://code.facebook.com/projects/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="fbOpenSource">
-          <img
-            src={this.props.config.baseUrl + 'img/oss_logo.png'}
-            alt="Facebook Open Source"
-            width="170"
-            height="45"
-          />
-        </a>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
